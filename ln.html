@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otake Login</title>
+    <!-- <link rel="stylesheet" href="ln.css"> -->
+    <link rel="stylesheet" href="ln.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome Otake!</h1>
+        <form class="login-form">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="batuhankra312@gmail.co" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="********" required>
+            <div class="options">
+                <div>
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            <button onclick="redirectToSignup()" type="submit" class="login-button">Create an Account</button>
+
+            <!-- <button type="submit" class="login-button">Create an Account</button> -->
+            <p class="or">or</p>
+            <button type="button" class="google-login-button">Continue with Google</button>
+        </form>
+        <!-- Button to redirect to Signup Page -->
+
+
+  <script>
+    // Function to redirect to Signup Page
+    function redirectToSignup() {
+      window.location.href = "signup.html"; // Change 'signup.html' to the actual URL of your signup page
+    }
+  </script>
+    </div>
+</body>
+</html>
